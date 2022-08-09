@@ -1,4 +1,4 @@
 # encriptador-one
-Challengue ONE - Encriptador
+Challenge ONE - Encriptador
 
 Live demo : https://francobrb.github.io/encriptador-one/
