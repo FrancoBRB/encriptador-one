@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body class="grid-container">
+    <header class="header">
+      <div><img class="alura__logo" src="./static/alura.svg" /></div>
+      <div>
+        <a href="https://github.com/FrancoBRB" target="_blank"
+          ><img class="github__logo" src="./static/github.png"
+        /></a>
+      </div>
+    </header>
+    <aside class="sidebar">
+      <div class="output">
+        <div class="notfound">
+          <img class="doodle" src="./static/doodle.png" />
+          <p class="ntf__1">Ningún mensaje fue encontrado</p>
+          <p></p>
+          <p class="ntf__2">
+            Ingresa el texto que desees encriptar o desencriptar.
+          </p>
+        </div>
+      </div>
+    </aside>
+    <article class="main">
+      <textarea
+        placeholder="Ingrese un texto a aquí"
+        class="e__textarea"
+      ></textarea>
+      <p class="warning">
+        <i class="bi bi-exclamation-circle-fill"></i> Solo letras minúsculas y
+        sin acentos
+      </p>
+      <div class="div_btns">
+        <button class="encript__btn" role="button" onclick="encryptText()">
+          Encriptar
+        </button>
+        <button class="decript__btn" role="button" onclick="decryptText()">
+          Desencriptar
+        </button>
+      </div>
+    </article>
+    <script src="./main.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.10/dist/clipboard.min.js"></script>
+  </body>
+</html>

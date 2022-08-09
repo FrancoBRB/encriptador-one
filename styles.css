@@ -1,0 +1,311 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+
+* {
+  font-family: "Raleway", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+  background-color: #e9ecf8;
+}
+
+body {
+  font-size: 1.2rem;
+  min-height: 100%;
+}
+
+.header {
+  grid-area: header;
+  background-color: #757fb2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.alura__logo {
+  margin-left: 15px;
+  height: 2.5rem;
+}
+
+.github__logo {
+  height: 3rem;
+  margin-right: 15px;
+  align-self: flex-end;
+}
+
+.github__logo:hover {
+  margin-right: 14px;
+  height: 3.2rem;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: #e9ecf8;
+  display: flex;
+}
+
+.main {
+  grid-area: main;
+  background-color: #e9ecf8;
+}
+
+.grid-container {
+  display: grid;
+  grid-template:
+    "header" 75px
+    "main" auto
+    "sidebar" 100px;
+}
+
+.output {
+  background-color: #757fb2;
+  height: 96%;
+  min-height: 250px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #212121;
+  display: flex;
+  overflow: inherit;
+}
+
+.notfound {
+  margin: auto auto;
+}
+
+.doodle {
+  display: none;
+}
+
+.div_btns {
+  display: flex;
+}
+
+.e__textarea {
+  margin-top: 20px;
+  margin-left: 11px;
+  width: 95%;
+  height: 80%;
+  border: 0;
+  resize: none;
+  background-color: #e9ecf8;
+  color: #000;
+}
+
+.e__textarea:focus {
+  border: 0 none #e9ecf8;
+  overflow: hidden;
+  outline: none;
+}
+
+.d__textarea {
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 94%;
+  height: 80%;
+  border: 0;
+  resize: none;
+  background-color: #757fb2;
+  color: #000;
+}
+
+.d__textarea:focus {
+  border: 0 none #757fb2;
+  overflow: hidden;
+  outline: none;
+}
+
+.warning {
+  font-size: 0.6em;
+  margin-left: 11px;
+  color: #000;
+}
+
+.copyico {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.copyico:hover {
+  font-size: 1.7rem;
+  cursor: pointer;
+}
+
+.btn__copy {
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+}
+
+.ntf__1 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #212121;
+}
+
+.ntf__2 {
+  font-size: 0.9rem;
+  color: #212121;
+}
+
+.encript__btn {
+  align-items: center;
+  appearance: none;
+  background-color: #757fb2;
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgba(58, 65, 111, 0.5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  width: 47%;
+  margin: 8px;
+  cursor: pointer;
+  display: inline-flex;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow 0.15s, transform 0.15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow, transform;
+  font-size: 18px;
+}
+
+.encript__btn:hover {
+  transform: translateY(-2px);
+}
+
+.encript__btn:active {
+  transform: translateY(2px);
+}
+
+.decript__btn {
+  align-items: center;
+  appearance: none;
+  background-color: #e9ecf8;
+  color: #757fb2 !important;
+  border: solid 2px #757fb2;
+  border-radius: 6px;
+  box-sizing: border-box;
+  color: #fff;
+  width: 47%;
+  margin: 8px;
+  cursor: pointer;
+  display: inline-flex;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow 0.15s, transform 0.15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow, transform;
+  font-size: 18px;
+}
+
+.decript__btn:hover {
+  transform: translateY(-2px);
+}
+
+.decript__btn:active {
+  transform: translateY(2px);
+}
+
+@media (min-width: 768px) {
+  .grid-container {
+    grid-template:
+      "header  header header" 75px
+      "main  main   sidebar" auto /
+      35% 35% 30%;
+  }
+  .d__textarea {
+    height: 87%;
+  }
+}
+
+@media (min-width: 1236px) {
+  .doodle {
+    display: inline;
+    height: 20em;
+  }
+}
+
+@media (max-height: 590px) {
+  .e__textarea {
+    height: 76%;
+  }
+  .ntf__1 {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #212121;
+  }
+  .ntf__2 {
+    font-size: 0.7rem;
+    color: #212121;
+  }
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 140px;
+  background-color: #323232;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 120%;
+  left: 50%;
+  margin-left: -70px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #212121 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
