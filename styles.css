@@ -10,6 +10,7 @@
 html {
   height: 100%;
   background-color: #e9ecf8;
+  position: relative;
 }
 
 body {
@@ -260,6 +261,21 @@ body {
 @media (max-height: 590px) {
   .e__textarea {
     height: 76%;
+  }
+  .ntf__1 {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #212121;
+  }
+  .ntf__2 {
+    font-size: 0.7rem;
+    color: #212121;
+  }
+}
+
+@media (max-height: 480px) {
+  .e__textarea {
+    height: 70%;
   }
   .ntf__1 {
     font-size: 0.9rem;

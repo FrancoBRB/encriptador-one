@@ -24,8 +24,6 @@ function encryptText() {
     )
       output += key[i];
   }
-  console.log(output); // CONSOLE LOG
-
   return resetOutput(output);
 }
 
